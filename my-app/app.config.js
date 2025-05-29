@@ -3,7 +3,7 @@ import 'dotenv/config';
 export default {
   expo: {
     name: "Busqueda de Objetos con IA",
-    slug: "object-hunt-mobile",
+    slug: "Busqueda_objetos_con_IA",
     version: "1.0.0",
     orientation: "portrait",
     userInterfaceStyle: "light",
@@ -18,6 +18,7 @@ export default {
       }
     },
     android: {
+      package: "com.samir.busquedaobjetos",
       adaptiveIcon: {
         backgroundColor: "#ffffff"
       },
@@ -41,6 +42,9 @@ export default {
     sdkVersion: "53.0.0",
     extra: {
       huggingFaceToken: process.env.HUGGING_FACE_TOKEN,
+      eas: {
+        projectId: "7896eea6-7ee0-4978-a341-7bb1aafa342c"
+      }
     }
   }
 };
